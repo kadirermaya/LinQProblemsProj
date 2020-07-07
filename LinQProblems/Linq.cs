@@ -18,5 +18,21 @@ namespace LinQProblems
             return contains;
         }
 
-    }
+        //  Using LINQ, write a function that takes in a list of strings and returns a copy of the list without duplicates.
+        //  List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Zack", "Mike" };
+
+
+        public IEnumerable<string> ListWithoutDuplicated(List<string> list)
+        {
+            var names = new List<string>() { "Mike", "Brad", "Nevin", "Zack", "Mike" };
+            var namesWithoutDuplicated = names.Distinct();
+            return namesWithoutDuplicated;
+        }
+
+        
+	
+
+	}
+
+    
 }
